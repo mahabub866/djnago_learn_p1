@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>R product page</h1>
+<h4>Item List</h4>
+<h3>{{object.title}}</h3>
+<p>{%if object.description != None%}
+    {{object.description}}
+{%else%}
+Descrpition Coming soon .please wait
+    {%endif%}
+    <h2>{{object.price}}</h2>
+</p>
+{% endblock %}
